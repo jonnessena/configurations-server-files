@@ -49,7 +49,7 @@ keycloak:
 #  use-resource-role-mappings: true
 #  token-minimum-time-to-live: 30
 
-  auth-server-url: http://172.17.0.2:8080/auth
+  auth-server-url: http://cef07.hitss.com.br/auth
   public-client: false
   realm: api-gateway
   resource: service-user
