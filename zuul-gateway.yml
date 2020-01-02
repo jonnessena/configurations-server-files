@@ -8,7 +8,6 @@ server:
   port: 30002
 
 
-
 zuul:
   routes:
     sample:
