@@ -42,7 +42,7 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://34.95.224.180:8761/eureka}
+      defaultZone: http://${IP_PUBLICO}:${server.port}/eureka/
   ribbon:
     eureka:
       enabled: true
