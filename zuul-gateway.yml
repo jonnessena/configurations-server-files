@@ -67,12 +67,15 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://34.95.224.180:8761/eureka}
+  instance:
+    preferIpAddress: true
   ribbon:
     eureka:
       enabled: true
     http:
       client:
         enabled: true
+
 
 logging:
   level:
