@@ -14,7 +14,6 @@ zuul:
       path: /user/**
       url: http://34.95.224.180:8087/secure/user
       #serviceId: API-SERVICE
-      strip-prefix: false
       roles: user,master
     master:
       path: /master/**
