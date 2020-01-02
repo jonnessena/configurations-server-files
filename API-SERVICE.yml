@@ -49,5 +49,3 @@ eureka:
     http:
       client:
         enabled: true
-  instance:
-    instance-id: API-SERVICE
