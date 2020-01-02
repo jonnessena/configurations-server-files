@@ -9,7 +9,6 @@ spring:
 
 server:
     port: 8087
-    address: ${IP_PUBLICO}
 
 
 keycloak:
@@ -43,7 +42,7 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://34.95.224.180:8761/eureka}
+      defaultZone: ${SERVICE_URL_DEFAULT_ZONE}
   ribbon:
     eureka:
       enabled: true
