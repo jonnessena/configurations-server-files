@@ -12,12 +12,14 @@ zuul:
   routes:
     sample:
       path: /user/**
-      url: http://34.95.224.180:8087/secure/user
+      #url: http://34.95.224.180:8087/secure/user
+      url: http://localhost:8087/secure/user
       #serviceId: API-SERVICE
       roles: user,master
     master:
       path: /master/**
-      url: http://34.95.224.180:8087/secure/master
+      #url: http://34.95.224.180:8087/secure/master
+      url: http://localhost:8087/secure/master
       #serviceId: API-SERVICE
       roles: master
     logout:
@@ -26,7 +28,8 @@ zuul:
       roles: user,master
     open:
       path: /open/**
-      url: http://34.95.224.180:8087/open
+      #url: http://34.95.224.180:8087/open
+      url: http://locahost:8087/open
 
 keycloak:
   # turn off keycloak spring boot auto-configuration:
@@ -65,7 +68,8 @@ management:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://34.95.224.180:8761/eureka}
+      #defaultZone: ${EUREKA_URI:http://34.95.224.180:8761/eureka}
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
     preferIpAddress: true
   ribbon:
